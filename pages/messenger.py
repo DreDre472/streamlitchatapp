@@ -2,6 +2,9 @@ import streamlit as st
 import json
 import os
 from datetime import datetime
+from streamlit import st_autorefresh
+
+st_autorefresh(interval=2000, limit=None, key="refresh")
 
 if 'username' not in st.session_state:
     st.error("Please log in first.")
