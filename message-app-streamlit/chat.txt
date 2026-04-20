@@ -1,3 +1,0 @@
-{"user": "dre", "message": "herro", "timestamp": "2026-04-20 09:31:32.459033"}
-{"user": "dre", "message": "dodong", "timestamp": "2026-04-20 09:32:10.415964"}
-{"user": "bababoui", "message": "no", "timestamp": "2026-04-20 09:32:29.991660"}
