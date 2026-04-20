@@ -2,9 +2,18 @@ import streamlit as st
 import json
 import os
 from datetime import datetime
-from streamlit import st_autorefresh
+from streamlit.components.v1 import html
 
-st_autorefresh(interval=2000, limit=None, key="refresh")
+html(
+    """
+    <script>
+        setInterval(() => {
+            window.location.reload();
+        }, 2000);
+    </script>
+    """,
+    height=0,
+)
 
 if 'username' not in st.session_state:
     st.error("Please log in first.")
